@@ -34,8 +34,10 @@ enum CliCommand {
     #[structopt(name = "new")]
     New(NewCli),
     /// generate code from a configuration file
+    #[structopt(name = "generate")]
     Generate(GenerateCli),
     /// install waPC extensions
+    #[structopt(name = "install")]
     Install(InstallCli),
 }
 
