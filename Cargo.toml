@@ -1,0 +1,26 @@
+[package]
+name = "wapc-cli"
+version = "0.1.0"
+authors = ["waPC Team"]
+edition = "2018"
+repository = "https://github.com/wapc/wapc-cli"
+description = "Rust command line interface for creating new waPC projects and code generation"
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["webassembly", "wapc", "cli", "codegen"]
+categories = ["wasm", "command-line-utilities"]
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+structopt = "0.3.21"
+
+[dev-dependencies]
+test_bin = "0.3.0"
+
+[[bin]]
+name = "wapc"
+path = "src/main.rs"
+test = true
+bench = true
